@@ -1,0 +1,67 @@
+spring:
+  # mysql db
+  h2:
+    console:
+      enabled: true
+      path:
+  datasource:
+    url: jdbc:mysql://wrieating-database.ca59q4wbjg2d.ap-northeast-2.rds.amazonaws.com:13306/wrieatingdb
+    username: admin
+    password: wrieating123
+    driver-class-name:
+  sql:
+    init:
+      data-locations:
+      mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+        color-codes: true
+        use_sql_comments: true
+    defer-datasource-initialization: true
+  output:
+    ansi:
+      enabled: ALWAYS
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${email}
+    password: ${password}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+email:
+  sender:
+    man: ${email}
+    password: ${password}
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql:
+              BasicBinder: trace
+#jwt
+mail:
+  address:
+    admin: admin@gmail.com
+jwt:
+  key: qweasdzxcrtyfghvbn12341234qweasdzxcrtyfghvbn345345345345345sdasdhukwhdkuahjhdu
+  access-token-expiration-minutes: 40
+  refresh-token-expiration-minutes: 420
+
+server:
+  error:
+    whitelabel:
+      enabled: false
