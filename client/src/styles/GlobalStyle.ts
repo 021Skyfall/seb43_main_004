@@ -63,6 +63,11 @@ const GlobalStyle = createGlobalStyle`
         background: transparent;
         padding: 0;
         cursor: pointer;
+        color:inherit
+    }
+
+    span {
+        color: inherit;
     }
 
     // icon setting
@@ -72,8 +77,10 @@ const GlobalStyle = createGlobalStyle`
         color: inherit;
     }
 
-    .test-btn {
-        margin-top: 250px;
+    @media ${({ theme }) => theme.device.mobile} {
+        body {
+            font-size: 1.4rem;
+        }
     }
 `
 

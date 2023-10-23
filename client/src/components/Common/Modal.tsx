@@ -8,7 +8,7 @@ const StyledModal = styled.div`
   background-color: rgba(0, 0, 0, 0.3);
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
@@ -43,6 +43,22 @@ const StyledModal = styled.div`
     .btn-box {
       display: flex;
       gap: 0.5rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    .msg-box {
+      width: 90%;
+      padding: 3rem;
+
+      span {
+        margin-bottom: 2rem;
+      }
+
+      .msg-txt {
+        font-size: ${({ theme }) => theme.fontSize.middle};
+        margin-bottom: 3rem;
+      }
     }
   }
 `

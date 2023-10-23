@@ -8,15 +8,19 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 public class Day {
-    private Double totalKcal;
-    private Double totalCarbohydrate;
-    private Double totalProtein;
-    private Double totalFat;
+    private Long totalKcal;
+    private Long totalCarbohydrate;
+    private Long totalProtein;
+    private Long totalFat;
+    private Long totalSugar;
+    private Long totalSalt;
 
-    public Day(Double totalKcal, Double totalCarbohydrate, Double totalProtein, Double totalFat) {
+    public Day(Long totalKcal, Long totalCarbohydrate, Long totalProtein, Long totalFat, Long totalSugar, Long totalSalt) {
         this.totalKcal = totalKcal;
         this.totalCarbohydrate = totalCarbohydrate;
         this.totalProtein = totalProtein;
         this.totalFat = totalFat;
+        this.totalSugar = totalSugar;
+        this.totalSalt = totalSalt;
     }
 }
