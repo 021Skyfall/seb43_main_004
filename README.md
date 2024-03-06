@@ -11,9 +11,10 @@
 
   ### 배포 링크 : <a href="http://fe-004-s3-bucket.s3-website.ap-northeast-2.amazonaws.com" target="_blank">WR!EATING</a>
   ### 테스트 계정
-    ID : wrieatingtest@gmail.com
-    PW : wireating123!@#
+  ID : wrieatingtest@gmail.com /
+  PW : wireating123!@#
 <br />
+
   
   ![image](https://github.com/codestates-seb/seb43_main_004/assets/120611048/67e5e99c-f8f2-4921-b4c2-49da9c79801c)
   </div>
